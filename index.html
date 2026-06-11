@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akash Ralh | Software Developer & Interactive Designer</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portfolio of Akash Ralh, a professional Software Developer specializing in Web Development, Mobile Apps, Game Development, and 3D Interactive Ads. Explore portfolio, projects, and contact info.">
+  <meta name="keywords" content="Akash Ralh, Software Developer, Web Development, App Development, Game Development, 3D Interactive Ad, Portfolio, Programmer, India">
+  <meta name="author" content="Akash Ralh">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Akash Ralh | Software Developer & Interactive Designer">
+  <meta property="og:description" content="Portfolio of Akash Ralh, a professional Software Developer specializing in Web Development, Mobile Apps, Game Development, and 3D Interactive Ads.">
+  <meta property="og:image" content="assets/images/web-dashboard.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Akash Ralh | Software Developer & Interactive Designer">
+  <meta property="twitter:description" content="Portfolio of Akash Ralh, a professional Software Developer specializing in Web Development, Mobile Apps, Game Development, and 3D Interactive Ads.">
+  <meta property="twitter:image" content="assets/images/web-dashboard.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+
+  <!-- Canvas Background for Interactive Particle Network -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo" id="nav-logo">
+        <span class="logo-accent">&lt;</span>Akash<span class="logo-accent"> /&gt;</span>
+      </a>
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item"><a href="#home" class="nav-link active" id="link-home">Home</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link" id="link-about">About</a></li>
+        <li class="nav-item"><a href="#services" class="nav-link" id="link-services">Services</a></li>
+        <li class="nav-item"><a href="#work" class="nav-link" id="link-work">Projects</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link" id="link-contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-outline nav-cta-btn" id="nav-cta">Get in Touch</a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home" class="hero-section">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="badge fade-in" id="hero-badge">
+          <span class="badge-dot"></span> Available for Freelance & Full-time Work
+        </div>
+        <h1 class="hero-title fade-in" id="hero-title">
+          Engineering Digital <span class="gradient-text">Experiences</span> that Matter
+        </h1>
+        <p class="hero-subtitle fade-in" id="hero-subtitle">
+          Hi, I'm <strong class="text-white">Akash Ralh</strong>, a professional Software Developer. I build high-performance web applications, cross-platform mobile apps, interactive games, and optimized 3D digital designs.
+        </p>
+        <div class="hero-ctas fade-in" id="hero-ctas">
+          <a href="#work" class="btn btn-primary" id="btn-view-work">
+            <span>View My Work</span>
+            <svg class="icon-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn-secondary" id="btn-contact-me">Let's Connect</a>
+        </div>
+      </div>
+      <div class="hero-visual fade-in" id="hero-visual">
+        <div class="visual-wrapper">
+          <!-- Clean Browser Mockup -->
+          <div class="browser-mockup">
+            <div class="browser-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <div class="browser-address">akashralh.dev/portfolio</div>
+            </div>
+            <div class="browser-body">
+              <img src="assets/images/web-dashboard.png" alt="Professional Web Dashboard Mockup" class="browser-img">
+            </div>
+          </div>
+          
+          <!-- Clean Code Editor Window Overlay -->
+          <div class="code-window-mockup">
+            <div class="code-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="code-title">developer.json</span>
+            </div>
+            <div class="code-body">
+              <pre><code>{
+  <span class="token keyword">"name"</span>: <span class="token string">"Akash Ralh"</span>,
+  <span class="token keyword">"role"</span>: <span class="token string">"Software Developer"</span>,
+  <span class="token keyword">"skills"</span>: [<span class="token string">"Web"</span>, <span class="token string">"App"</span>, <span class="token string">"Game"</span>, <span class="token string">"3D"</span>],
+  <span class="token keyword">"focus"</span>: <span class="token string">"Clean Architecture & UX"</span>
+}</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span class="mouse">
+        <span class="wheel"></span>
+      </span>
+      <span class="scroll-text">Scroll Down</span>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container about-container">
+      <div class="about-grid">
+        <!-- Profile Photo Card (Professional and clean layout) -->
+        <div class="about-photo-wrapper scroll-reveal">
+          <div class="about-photo-card">
+            <img src="assets/images/user-photo.jpg" alt="Akash Ralh Portrait" class="about-photo">
+          </div>
+        </div>
+        <!-- Profile Description & Bio -->
+        <div class="about-content scroll-reveal">
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+          <p class="about-bio">
+            I am a dedicated Software Developer based in India, specializing in crafting highly efficient, modern, and professional digital solutions. My approach blends engineering discipline with user-centered design to build software that is both robust and intuitive.
+          </p>
+          <p class="about-bio">
+            Over the course of my development career, I have delivered projects across web platforms, cross-platform mobile apps, interactive game engines, and high-fidelity 3D digital advertisements. I focus on clean architecture, performance optimization, and writing scalable code.
+          </p>
+          
+          <div class="about-details-grid">
+            <div class="detail-item">
+              <span class="detail-label">Location</span>
+              <span class="detail-value">Punjab, India</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Email</span>
+              <span class="detail-value"><a href="mailto:ralhakash342@gmail.com" class="detail-link">ralhakash342@gmail.com</a></span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Services</span>
+              <span class="detail-value">Web, Apps, Games, 3D Ads</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Status</span>
+              <span class="detail-value">Available for Select Projects</span>
+            </div>
+          </div>
+          
+          <div class="about-ctas">
+            <a href="#contact" class="btn btn-primary">Work With Me</a>
+            <a href="https://wa.me/919501512840" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+              <span>Chat on WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="section-title" id="services-title">Services I <span class="gradient-text">Offer</span></h2>
+        <p class="section-subtitle">Blending technical precision with creative flair to build comprehensive, production-ready digital solutions.</p>
+      </div>
+      
+      <div class="services-grid">
+        <!-- Service Card 1 -->
+        <div class="service-card scroll-reveal" id="service-web">
+          <div class="service-icon-wrapper">
+            <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+              <line x1="8" y1="21" x2="16" y2="21"/>
+              <line x1="12" y1="17" x2="12" y2="21"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Web Development</h3>
+          <p class="service-description">Creating lightning-fast, high-converting, and SEO-optimized web applications using modern stacks like React, Next.js, and sleek, responsive layouts.</p>
+          <ul class="service-bullets">
+            <li>Single Page Applications (SPAs)</li>
+            <li>E-commerce Solutions</li>
+            <li>Headless CMS Integrations</li>
+            <li>Tailwind CSS & Custom Styling</li>
+          </ul>
+        </div>
+
+        <!-- Service Card 2 -->
+        <div class="service-card scroll-reveal" id="service-app">
+          <div class="service-icon-wrapper">
+            <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+              <line x1="12" y1="18" x2="12.01" y2="18"/>
+            </svg>
+          </div>
+          <h3 class="service-title">App Development</h3>
+          <p class="service-description">Building responsive, feature-rich iOS and Android mobile apps with smooth performance, animations, and cross-platform native experiences.</p>
+          <ul class="service-bullets">
+            <li>Cross-Platform Mobile Apps</li>
+            <li>API & Database Integrations</li>
+            <li>Real-time Chat & Push Notifications</li>
+            <li>Intuitive UX Workflows</li>
+          </ul>
+        </div>
+
+        <!-- Service Card 3 -->
+        <div class="service-card scroll-reveal" id="service-game">
+          <div class="service-icon-wrapper">
+            <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 12h4m-2-2v4"/>
+              <circle cx="18" cy="9" r="1"/>
+              <circle cx="15" cy="12" r="1"/>
+              <rect x="2" y="6" width="20" height="12" rx="3"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Game Development</h3>
+          <p class="service-description">Designing and engineering immersive 2D/3D games for browsers and mobile platforms, featuring optimized physics, smooth frame rates, and engaging gameplay.</p>
+          <ul class="service-bullets">
+            <li>HTML5 & WebGL Browser Games</li>
+            <li>Mobile Game Design</li>
+            <li>Interactive Physics Engines</li>
+            <li>Custom Game Mechanics</li>
+          </ul>
+        </div>
+
+        <!-- Service Card 4 -->
+        <div class="service-card scroll-reveal" id="service-3d">
+          <div class="service-icon-wrapper">
+            <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+              <line x1="12" y1="22.08" x2="12" y2="12"/>
+            </svg>
+          </div>
+          <h3 class="service-title">3D Interactive Ad Design</h3>
+          <p class="service-description">Crafting cutting-edge 3D promotional campaigns and ads featuring interactive elements, orbital camera rotations, and high-performance WebGL renders.</p>
+          <ul class="service-bullets">
+            <li>Interactive Product Renders</li>
+            <li>Spline / Three.js Integrations</li>
+            <li>Scroll-linked 3D Animations</li>
+            <li>Engaging Web Banner Ads</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="work" class="work-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="section-title" id="portfolio-title">Featured <span class="gradient-text">Projects</span></h2>
+        <p class="section-subtitle">Explore a handpicked selection of my work demonstrating clean engineering, visual polish, and performance.</p>
+      </div>
+
+      <!-- Portfolio Filter Controls -->
+      <div class="portfolio-filters" id="portfolio-filters">
+        <button class="filter-btn active" data-filter="all" id="btn-filter-all">All</button>
+        <button class="filter-btn" data-filter="web" id="btn-filter-web">Web Dev</button>
+        <button class="filter-btn" data-filter="app" id="btn-filter-app">App Dev</button>
+        <button class="filter-btn" data-filter="game" id="btn-filter-game">Game Dev</button>
+        <button class="filter-btn" data-filter="ad" id="btn-filter-ad">3D Ads</button>
+      </div>
+
+      <div class="projects-grid" id="projects-grid">
+        <!-- Project 1 (Web) -->
+        <article class="project-card scroll-reveal" data-category="web" id="project-dashboard">
+          <div class="project-image-wrapper">
+            <img src="assets/images/web-dashboard.png" alt="SaaS Analytical Dashboard UI Mockup" class="project-image" loading="lazy">
+            <div class="project-overlay">
+              <span class="project-tag">Web Dev</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Nexus SaaS Dashboard</h3>
+            <p class="project-description">A production-ready SaaS analytical dashboard featuring dark mode aesthetics, dynamic charts, real-time metrics, and customizable workspace widgets.</p>
+            <div class="project-tech">
+              <span>Next.js</span>
+              <span>React ChartJS</span>
+              <span>CSS Modules</span>
+              <span>REST API</span>
+            </div>
+            <a href="https://github.com/AkashRalh" target="_blank" rel="noopener" class="project-link" id="link-proj-nexus">
+              <span>Explore Code</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"/>
+                <polyline points="7 7 17 7 17 17"/>
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 2 (App) -->
+        <article class="project-card scroll-reveal" data-category="app" id="project-mobile">
+          <div class="project-image-wrapper">
+            <img src="assets/images/mobile-app.png" alt="Futuristic Smart Home Mobile App Mockup" class="project-image" loading="lazy">
+            <div class="project-overlay">
+              <span class="project-tag">App Dev</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Aegis Smart Home App</h3>
+            <p class="project-description">A futuristic mobile application UI controlling domestic smart hardware. Complete with custom widget toggles, room controls, and real-time status feeds.</p>
+            <div class="project-tech">
+              <span>Flutter</span>
+              <span>Dart</span>
+              <span>Firebase</span>
+              <span>State Mgmt</span>
+            </div>
+            <a href="https://github.com/AkashRalh" target="_blank" rel="noopener" class="project-link" id="link-proj-aegis">
+              <span>Explore Code</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"/>
+                <polyline points="7 7 17 7 17 17"/>
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 3 (Game) -->
+        <article class="project-card scroll-reveal" data-category="game" id="project-game-neon">
+          <div class="project-image-wrapper">
+            <img src="assets/images/game-dev.png" alt="Cyberpunk City Driving 3D Game Mockup" class="project-image" loading="lazy">
+            <div class="project-overlay">
+              <span class="project-tag">Game Dev</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">CyberChase 3D Arcade</h3>
+            <p class="project-description">An atmospheric 3D arcade driving game set in a vibrant cyberpunk metropolis, featuring simulated vehicle physics, responsive inputs, and adaptive soundtracks.</p>
+            <div class="project-tech">
+              <span>Unity</span>
+              <span>C#</span>
+              <span>WebGL</span>
+              <span>URP Rendering</span>
+            </div>
+            <a href="https://github.com/AkashRalh" target="_blank" rel="noopener" class="project-link" id="link-proj-cyberchase">
+              <span>Explore Code</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"/>
+                <polyline points="7 7 17 7 17 17"/>
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 4 (3D Ad) -->
+        <article class="project-card scroll-reveal" data-category="ad" id="project-3d-sneaker">
+          <div class="project-image-wrapper">
+            <img src="assets/images/interactive-ad.png" alt="Interactive 3D Sneaker Showcase Ad Mockup" class="project-image" loading="lazy">
+            <div class="project-overlay">
+              <span class="project-tag">3D Ad Design</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Quantum Kick Interactive Ad</h3>
+            <p class="project-description">A premium, responsive WebGL banner advertisement displaying a futuristically styled sneaker. Users can orbit, switch colors, and examine close-ups in 3D.</p>
+            <div class="project-tech">
+              <span>Three.js</span>
+              <span>GSAP</span>
+              <span>Spline 3D</span>
+              <span>HTML5 Canvas</span>
+            </div>
+            <a href="https://github.com/AkashRalh" target="_blank" rel="noopener" class="project-link" id="link-proj-sneaker">
+              <span>Explore Code</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"/>
+                <polyline points="7 7 17 7 17 17"/>
+              </svg>
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="contact-bg-glow"></div>
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="section-title" id="contact-title">Let's Build Something <span class="gradient-text">Amazing</span></h2>
+        <p class="section-subtitle">Have an idea, project, or open role? Get in touch and let's turn your concept into reality.</p>
+      </div>
+
+      <div class="contact-wrapper">
+        <!-- Contact Info Side -->
+        <div class="contact-info scroll-reveal">
+          <h3 class="contact-info-title">Contact Information</h3>
+          <p class="contact-info-desc">Feel free to reach out via email or direct message on WhatsApp. I am always happy to discuss new opportunities.</p>
+          
+          <div class="contact-details">
+            <div class="contact-detail-item">
+              <div class="detail-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </div>
+              <div class="detail-content">
+                <span>Email Me</span>
+                <a href="mailto:ralhakash342@gmail.com" class="detail-link" id="contact-email-link">ralhakash342@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="detail-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </div>
+              <div class="detail-content">
+                <span>Call or WhatsApp</span>
+                <a href="https://wa.me/919501512840" target="_blank" rel="noopener" class="detail-link" id="contact-phone-link">+91 9501512840</a>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="detail-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <div class="detail-content">
+                <span>Location</span>
+                <span class="detail-text">Punjab, India (Available globally)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="https://github.com/AkashRalh" target="_blank" rel="noopener" class="social-btn" aria-label="GitHub" id="social-github">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+              </svg>
+            </a>
+            <a href="https://wa.me/919501512840" target="_blank" rel="noopener" class="social-btn" aria-label="WhatsApp" id="social-whatsapp">
+              <svg width="20" height="20" viewBox="0 0 448 512" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L32 480l117.7-30.9c32.4 17.7 68.9 27 106.2 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-117zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Form Side -->
+        <div class="contact-form-wrapper scroll-reveal">
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <label for="form-name">Your Name</label>
+              <input type="text" id="form-name" class="form-input" placeholder="John Doe" required>
+            </div>
+
+            <div class="form-group">
+              <label for="form-email">Your Email</label>
+              <input type="email" id="form-email" class="form-input" placeholder="john@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="form-subject">Subject</label>
+              <select id="form-subject" class="form-input" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="Web Development">Web Development Project</option>
+                <option value="App Development">App Development Project</option>
+                <option value="Game Development">Game Development Project</option>
+                <option value="3D Interactive Ad Design">3D Interactive Ad Design</option>
+                <option value="Other / Recruitment">Other / Full-time Role</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="form-message">Message</label>
+              <textarea id="form-message" class="form-input form-textarea" placeholder="Tell me more about your project goals..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-submit" id="btn-submit-form">
+              <span>Send Message</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"/>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p class="footer-copy">&copy; <span id="current-year">2026</span> Akash Ralh. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#work">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Action Button (FAB) -->
+  <a href="https://wa.me/919501512840" class="whatsapp-fab" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" id="whatsapp-fab">
+    <div class="whatsapp-fab-pulse"></div>
+    <svg width="24" height="24" viewBox="0 0 448 512" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L32 480l117.7-30.9c32.4 17.7 68.9 27 106.2 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-117zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+    </svg>
+  </a>
+
+  <!-- Custom Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="script.js?v=3"></script>
+</body>
+</html>
